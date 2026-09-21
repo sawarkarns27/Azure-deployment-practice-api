@@ -44,3 +44,4 @@ jobs:
         with:
           app-name: ${{ secrets.YOUR_APP_SERVICE_NAME }}
           package: .
+          startup-command: "uvicorn main:app --host 0.0.0.0 --port 8000"  
