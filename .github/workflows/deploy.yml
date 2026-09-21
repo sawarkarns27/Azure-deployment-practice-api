@@ -1,4 +1,4 @@
-name: Deploy FastAPI application to Azure App Service test
+name: Deploy FastAPI application to Azure App Service
 
 on:
   push:
@@ -42,5 +42,5 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name:${{ secrets.YOUR_APP_SERVICE_NAME }}
+          app-name: ${{ secrets.YOUR_APP_SERVICE_NAME }}
           package: .
